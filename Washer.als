@@ -10,7 +10,7 @@ sig State {
 	forms: set Formula
 	}
 pred initial[s:State]{
-	s.features = Washer
+	s.features = Wash
 }
 
 //sig Name{}
