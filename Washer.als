@@ -1,15 +1,17 @@
-//open ctl[State]
+open ctlfc[State]
 
 //State of Wash
 
 
 sig State {
 	features: set Name,
-	root: features,
+	//root: features,
 	relations: set Relation,
 	forms: set Formula
 	}
-
+pred initial[s:State]{
+	s.features = Washer
+}
 
 //sig Name{}
 abstract sig Type {}
